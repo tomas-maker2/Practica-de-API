@@ -1,0 +1,113 @@
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+
+    <header>
+        <img src="netflix.png" alt="" class="logo">
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+            <ul class="nav-list">
+                <li><a href="#"></a>Inicio</li>
+                <li><a href="#"></a>Programas</li>
+                <li><a href="#"></a>Peliculas</li>
+                <li><a href="#"></a>Más Recientes</li>
+                <li><a href="#"></a>Mi Lista</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="pelicula-principal">
+            <div class="contenedor">
+                <h3 class="titulo">El caballero oscuro </h3>
+                <p class="descripcion">Batman/Bruce Wayne regresa para continuar su guerra contra el crimen. Con la ayuda del teniente Jim Gordon y del Fiscal del Distrito Harvey Dent, Batman se propone destruir el crimen organizado en la ciudad de Gotham. El triunvirato demuestra su eficacia, pero, de repente, aparece Joker, un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos.</p>
+                <button role="button" class="boton"><i class="bi bi-play-fill"></i>Reproducir</button>
+                <button role="button" class="boton"><i class="bi bi-info-circle-fill"></i>Más Informacion</button>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h3 class="contenedor subtitulo">Películas Recomendadas</h3>
+
+
+
+        <div id="carouselExampleControls" class="carousel slide contenedor" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="https://images2.alphacoders.com/117/1170277.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://a-static.besthdwallpaper.com/the-lord-of-the-rings-the-fellowship-of-the-ring-wallpaper-2560x1600-87075_7.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images7.alphacoders.com/979/979511.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images8.alphacoders.com/107/1079738.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://wallpapers.com/images/featured/d5hpgadclxszmpeh.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images7.alphacoders.com/124/1241136.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+    </section>
+
+    <div class="contenedor d-flex gap-3 flex-wrap align-center justify-content-center" id="contenedor">
+        
+    </div>
+
+    <div class="paginacion">
+        <button id="btn-anterior" class="boton-anterior">Anterior</button>
+        <button id="btn-siguiente" class="boton-siguiente">Siguiente</button>
+    </div>
+
+
+    <footer class="contenedor">
+
+        <section class="redes">
+
+            <div class="imagen-netflix">
+                <img src="N.png" alt="" class="imagen-n" width="150px">
+            </div>
+            <div class="iconos">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-whatsapp"></i>
+            </div>         
+        </section>
+        </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

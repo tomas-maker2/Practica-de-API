@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    /* background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/RYFM2ESXARAP5LE6XPVXXLZBQM.jpg); */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    background: #0c0c0c;
+    
+}
+
+.contenedor{
+    max-width: 2400px;
+    width: 100%;
+    margin: auto;
+}
+
+.paginacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.boton-anterior{
+    font-size: 25px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-top-left-radius: 1rem;
+    border-end-start-radius: 1rem;
+    
+}
+
+.boton-siguiente{
+    font-size: 25px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-top-right-radius: 1rem;
+    border-end-end-radius: 1rem;
+}
+
+.card{
+    border-radius: .4rem;
+}
+
+/* HEADER */
+
+.logo{
+    max-width: 300px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.nav-list{
+    display: flex;
+    list-style-type:none;
+    gap: 4rem;
+    cursor: pointer;
+    margin-right: 30px;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.abrir-menu, .cerrar-menu{
+    display: none;
+}
+
+/* PELICULA PRINCIPAL===============
+
+
+=============*/
+
+.pelicula-principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: white;
+    background: linear-gradient(rgba(0,0,0, .50) 0%, rgba(0,0,0, .50) 100%), url(https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/06/10-curiosidades-de-Batman-El-Caballero-de-la-Noche-la-mejor-pelicula-del-Hombre-Murcielago-1.jpg?fit=1280%2C720&quality=80&ssl=1);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+    
+}
+
+.pelicula-principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+    margin-left: 5em;
+}
+
+.pelicula-principal .titulo{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion{
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton{
+    background: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: white;
+    margin-left: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover{
+    background: #fff;
+    color: #000;
+}
+
+.pelicula-principal .boton i {
+    margin-right: 1.25em;
+}
+
+/* CONTENEDOR TIULOS Y CONTROLES===============
+
+
+=============*/
+
+/* .contenedor-titulo-controles{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    color: white;
+}
+
+.contenedor-titulo-controles h3{
+    color: white;
+    font-size: 30px;
+} */
+
+/* .contenedor-titulo-controles .indicadores button{
+    background: #fff;
+    height: 3px;
+    width: 20px;
+    cursor: pointer;
+    border: none;
+    margin-right: 5px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button:active{
+    background: red;
+} */
+
+/* CONTENEDOR PRINCIPAL Y FLECHAS===============
+
+
+=============*/
+
+/* .peliculas-recomendadas{
+    margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background: transparent;
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda{
+    left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    right: 0;
+} */
+
+
+
+
+
+
+/* CAROUSEL===============
+
+
+=============*/
+
+/* .peliculas-recomendadas .contenedor-carousel{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
+    width: 100%;
+    vertical-align: top;
+} */
+
+
+
+/* CAROUSEL===============
+
+
+=============*/
+
+.subtitulo{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.carousel-inner{
+    max-height: 1000px;
+    object-fit: cover;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+}
+
+
+footer{
+    border-top: 2px solid white;
+    max-width: 80%;
+    margin: auto;
+}
+
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    margin-top: 2.4rem;
+}
+
+.bi-instagram, .bi-twitter, .bi-facebook, .bi-whatsapp{
+    font-size: 60px;
+    margin: 20px;
+    padding: 1rem;
+}
+
+.bi-instagram{
+    color: red;
+}
+
+.bi-twitter{
+color: lightblue;
+}
+
+.bi-facebook{
+ color: blue;
+}
+
+.bi-whatsapp{
+ color: green;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 40px;
+        background-color: transparent;
+    }
+    .abrir-menu{
+        color: white;
+    }
+
+    .cerrar-menu{
+        color: white;
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #1b1818;
+        bottom: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 4rem;
+    }
+
+    .logo{
+        max-width: 250px;
+    }
+    
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+    }
+    .nav-list li a {
+        justify-content: space-evenly;
+    }
+
+    header{
+        color: white;
+        font-size: 20px;
+        
+    }
+
+
+    /* PELICULA PRINCIPAL===============
+
+
+=============*/
+
+    .pelicula-principal{
+        font-size: 14px;
+    }
+    .pelicula-principal .descripcion{
+        max-width: 90%;
+    }
+
+    .peliculas-recomendadas .contenedor-carousel{
+        overflow: visible;
+    }
+
+    .peliculas-recomendadas .contenedor-carousel .carousel{
+        display: grid;
+        grid-template-columns:  repeat(3, 1fr);
+        gap: 20px;
+        padding: 10px 10px;
+    }
+
+    .pelicula-principal .indicadores,
+    .peliculas-recomendadas .flecha-izquierda,
+    .peliculas-recomendadas .flecha-derecha{
+        display: none;
+    }
+
+
+        /* FOOTER===============
+
+
+=============*/
+
+
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2.4rem;
+        margin-top: 2.4rem;
+    }
+
+    .imagen-netflix{
+margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1270px){
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 60px;
+        background-color: transparent;
+    }
+    .abrir-menu{
+        color: white;
+    }
+
+    .cerrar-menu{
+        color: white;
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #1b1818;
+        bottom: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 4rem;
+    }
+
+    .logo{
+        max-width: 250px;
+    }
+    
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+    }
+    .nav-list li a {
+        justify-content: space-evenly;
+    }
+
+    header{
+        color: white;
+        font-size: 20px;
+        
+    }
+}
+
+
